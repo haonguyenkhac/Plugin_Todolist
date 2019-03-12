@@ -1,0 +1,163 @@
+
+.container {
+  background: #fff;
+  max-width: 600px;
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 1px solid #cfcbcc;
+}
+
+
+.btedit,.btdelete,.btok,.add {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+.btedit,.btdelete,.btok{
+  float: right;
+}
+button:hover {
+  color: #333;
+}
+.task > .btdelete:hover {
+  color: #CF2323;
+}
+.remove:hover{
+  color: #CF2323;
+}
+.btedit:hover{
+  color: green;
+}
+.btok:hover{
+  color: green;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+
+.table {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.table li {
+  text-align: center;
+  font-weight: 400;
+  border-bottom: 1px solid #cfcbcc;
+  line-height: 1.5;
+  padding: 8px 0;
+}
+#myP:before {
+  
+  padding: 10px 10px;
+  font-size: 20px;
+}
+#myP:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+#myP:last-child {
+  border-bottom: none;
+}
+
+.checked {
+  color: green;
+}
+.checked:before {
+  content: "\2713";
+  padding: 10px 10px;
+  font-size: 20px;
+}
+.checked:hover {
+  text-decoration: none;
+}
+.checked:hover:after {
+  
+  color: tomato;
+  text-align: right;
+}
+
+h3 {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.add{
+
+  padding: 10px;
+  width: 15%;
+  background: #d9d9d9;
+  color: #555;
+  float: right;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  margin: 0;
+  height: 40px;
+}
+input[class="item"]{
+  
+  width: 85%;
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+.move,input[type="checkbox"]{
+  float: left;
+}
+span.move {
+  content: '....';
+  width: 10px;
+  height: 20px;
+  display: inline-block;
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  line-height: 5px;
+  padding: 3px 4px;
+  cursor: grab;
+  vertical-align: middle;
+  margin-top: -1.1em;
+  margin-right: 1em;
+  font-size: 12px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  color: #cccccc;
+  text-shadow: 1px 0 1px black;
+}
+span.move::after {
+  content: '.. .. .. ..';
+}
+.move:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+#myP:focus {
+  background-color:silver;
+}
